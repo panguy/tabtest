@@ -5,6 +5,10 @@ open System.Windows.Controls
 open ViewModule.FSharp
 open System.Collections.ObjectModel
 
+
+// https://www.wpftutorial.net/datatemplates.html
+
+
 type ViewModel () as self =
     inherit ViewModule.ViewModelBase ()
     

@@ -17,44 +17,37 @@
         <Log:NpcAppender x:Key="NpcAppender" />
     </Window.Resources>
 
-    <Grid>
-        <TabControl x:Name="TabControl1" Margin="10">
-            <TabItem Header="Setup">
-                <ItemsControl Name="ic1">
-                    <StackPanel Orientation ="Horizontal">
-                        <TextBlock Width="Auto">First Name:</TextBlock>
-                        <TextBox HorizontalAlignment="Stretch"
-                                 Width="Auto"
-                                 Text="{Binding FirstName}" />
-                    </StackPanel>
-                    <TextBlock>Last Name:</TextBlock>
-                    <TextBox Text="{Binding LastName}" />
-                    <TextBlock>Company:</TextBlock>
-                    <TextBox Text="{Binding Company}" />
-                    <TextBlock>Position:</TextBlock>
-                    <TextBox Text="{Binding Position}" />
+    <TabControl x:Name="TabControl1" Margin="10">
+        <TabItem Header="Setup">
+            <Grid >
+                <TextBlock>First Name:</TextBlock>
+                <TextBox Text="{Binding FirstName}" />
+                <TextBlock>Last Name:</TextBlock>
+                <TextBox Text="{Binding LastName}" />
+                <TextBlock>Company:</TextBlock>
+                <TextBox Text="{Binding Company}" />
+                <TextBlock>Position:</TextBlock>
+                <TextBox Text="{Binding Position}" />
 
-                    <TextBlock>Save As:</TextBlock>
-                    <TextBox Text="{Binding SaveAs}" />
+                <TextBlock>Save As:</TextBlock>
+                <TextBox Text="{Binding SaveAs}" />
 
-                    <TextBlock>Phone:</TextBlock>
-                    <TextBox Text="{Binding Phone}" />
-                    <TextBlock>Fax:</TextBlock>
-                    <TextBox Text="{Binding Fax}" />
-                    <TextBlock>Mobile:</TextBlock>
-                    <TextBox Text="{Binding Mobile}" />
+                <TextBlock>Phone:</TextBlock>
+                <TextBox Text="{Binding Phone}" />
+                <TextBlock>Fax:</TextBlock>
+                <TextBox Text="{Binding Fax}" />
+                <TextBlock>Mobile:</TextBlock>
+                <TextBox Text="{Binding Mobile}" />
 
-                    <TextBlock>Email:</TextBlock>
-                    <TextBox Text="{Binding Email}" />
-                    <TextBlock>Twitter:</TextBlock>
-                    <TextBox Text="{Binding Twitter}" />
-                    <TextBlock>IM:</TextBlock>
-                    <TextBox Text="{Binding IM}" />
-                    
-                </ItemsControl>
-            </TabItem>
+                <TextBlock>Email:</TextBlock>
+                <TextBox Text="{Binding Email}" />
+                <TextBlock>Twitter:</TextBlock>
+                <TextBox Text="{Binding Twitter}" />
+                <TextBlock>IM:</TextBlock>
+                <TextBox Text="{Binding IM}" />
+            </Grid>
+        </TabItem>
             
-        </TabControl>
-    </Grid>
+    </TabControl>
 
 </Window>
